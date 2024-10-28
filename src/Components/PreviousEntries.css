@@ -1,0 +1,162 @@
+/* PreviousEntries.css */
+
+.previous-entries-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.previous-entries-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.previous-entries-container h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.entries-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.entry-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.entry-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.entry-details {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+.entry-label {
+    font-weight: 600;
+    color: #444;
+}
+
+.entry-value {
+    margin-left: 5px;
+    color: #666;
+}
+
+.date {
+    font-size: 14px;
+    color: #777;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.no-entries {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .previous-entries-container {
+        padding: 20px;
+    }
+
+    .entry-item {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .previous-entries-container h2 {
+        font-size: 22px;
+    }
+
+    .entry-details {
+        font-size: 14px; /* Smaller font for details */
+    }
+}
+
+/* Additional Styles for Filter Inputs and Table */
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+.filter-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px; /* Limit width for better layout */
+}
+
+.filter-section button {
+    padding: 10px 15px;
+    background-color: #34d399; /* Use the same color as table header */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+    background-color: #2aa879; /* Darken button on hover */
+}
+
+.entries-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.entries-table th,
+.entries-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.entries-table th {
+    background-color: #34d399; /* Green background for table header */
+    color: white;
+    text-align: left;
+}
+
+.entries-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+}

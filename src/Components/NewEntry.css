@@ -1,0 +1,88 @@
+/* NewEntry.css */
+
+.new-entry-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+  
+.new-entry-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+  
+.new-entry-container h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+  
+.new-entry-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+  
+.new-entry-container label {
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+  
+.new-entry-container input[type="text"],
+.new-entry-container input[type="number"],
+.new-entry-container input[type="date"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+  
+.new-entry-container input:focus {
+    outline: none;
+    border-color: #3a86ff;
+    box-shadow: 0 0 8px rgba(58, 134, 255, 0.2);
+}
+  
+.new-entry-container button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3a86ff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(58, 134, 255, 0.15);
+}
+  
+.new-entry-container button[type="submit"]:hover {
+    background-color: #155bcb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .new-entry-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-entry-container h2 {
+        font-size: 22px;
+    }
+
+    .new-entry-container button[type="submit"] {
+        font-size: 16px;
+    }
+}

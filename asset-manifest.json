@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Gold-System/static/css/main.56e2b70e.css",
-    "main.js": "/Gold-System/static/js/main.299580b7.js",
+    "main.css": "/Gold-System/static/css/main.5b4101cc.css",
+    "main.js": "/Gold-System/static/js/main.3cea33a6.js",
     "static/js/453.8c57d3c7.chunk.js": "/Gold-System/static/js/453.8c57d3c7.chunk.js",
     "index.html": "/Gold-System/index.html",
-    "main.56e2b70e.css.map": "/Gold-System/static/css/main.56e2b70e.css.map",
-    "main.299580b7.js.map": "/Gold-System/static/js/main.299580b7.js.map",
+    "main.5b4101cc.css.map": "/Gold-System/static/css/main.5b4101cc.css.map",
+    "main.3cea33a6.js.map": "/Gold-System/static/js/main.3cea33a6.js.map",
     "453.8c57d3c7.chunk.js.map": "/Gold-System/static/js/453.8c57d3c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e2b70e.css",
-    "static/js/main.299580b7.js"
+    "static/css/main.5b4101cc.css",
+    "static/js/main.3cea33a6.js"
   ]
 }

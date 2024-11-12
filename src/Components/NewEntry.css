@@ -86,3 +86,68 @@
         font-size: 16px;
     }
 }
+/* NewEntry.css */
+
+/* Main Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #38a169;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideIn 0.4s ease;
+    z-index: 1000;
+    width: 300px;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Save Button */
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #3182ce;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2b6cb0;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -139,6 +139,7 @@
     background-color: #e53e3e;
     color: white;
     padding: 8px 15px;
+    margin: 5px;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
@@ -149,6 +150,20 @@
     background-color: #c53030;
 }
 
+.update-button {
+    background-color: #42892a;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-button:hover {
+    background-color: #1d7b3f;
+}
 /* Fullscreen Button */
 .fullscreen-button-container {
     display: flex;
@@ -248,6 +263,7 @@
     background-color: #2f855a;
     transform: translateY(-2px);
 }
+
 .print-button {
     background-color: #3182ce;
     color: white;
@@ -258,9 +274,223 @@
     cursor: pointer;
     margin-top: 15px;
     transition: background-color 0.3s;
-  }
-  
-  .print-button:hover {
+}
+
+.print-button:hover {
     background-color: #2b6cb0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .previous-entries-page {
+        padding: 10px;
+    }
+
+    .entry-header {
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .entries-table th,
+    .entries-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+    }
+
+    .fullscreen-button-container {
+        justify-content: center;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
   }
   
+  .modal-content {
+    position: relative;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .close-modal:hover {
+    color: #333;
+  }
+  
+  .passkey-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .verify-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .verify-button:hover {
+    background-color: #45a049;
+  }
+  
+  .blank-div {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #4CAF50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #4a5568;
+  }
+
+  /* Background overlay for better focus */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Update form styling */
+  .update-form {
+    position: relative;
+    width: 400px; /* Increased width for spacious feel */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Softer, larger shadow */
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .update-form:hover {
+    transform: translateY(-5px); /* Slight elevation effect */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25); /* Shadow deepens on hover */
+  }
+  
+  .close-update-form {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .close-update-form:hover {
+    color: #333;
+  }
+  
+  /* Form title */
+  .update-form h3 {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Input styling */
+  .update-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .update-input:focus {
+    border-color: #007BFF; /* Focused input border color */
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.15); /* Subtle focus shadow */
+    outline: none;
+  }
+  
+  /* Save button */
+  .save-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.2s, transform 0.2s; /* Smooth button effects */
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift on hover */
+  }
+  
+  /* General text styling */
+  .update-form p,
+  .update-form label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
